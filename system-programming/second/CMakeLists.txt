@@ -3,4 +3,4 @@ project(SISOP C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(SISOP main.c bytearray.h bytearray.c string.h string.c arraylist.h arraylist.c)
+add_executable(SISOP main.c bytearray.h bytearray.c string.h string.c user.h user.c)

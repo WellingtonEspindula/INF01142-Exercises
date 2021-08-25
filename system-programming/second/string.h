@@ -20,7 +20,7 @@ typedef struct String {
 String newString(const char *string);
 void deleteString(String string);
 
-void stringSerialize(const byte_t *serializedData, void *inputString,
+void stringSerialize(const byte_t *serializedData, const void *inputString,
                      DecodMetadata metadata[STRING_FIELD_COUNT]);
 void *stringDeserialize(const byte_t *serializedData,
                         DecodMetadata metadata[STRING_FIELD_COUNT]);

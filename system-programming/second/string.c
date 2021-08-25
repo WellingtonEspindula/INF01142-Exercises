@@ -24,7 +24,7 @@ void deleteString(const String string) {
     free(string.string);
 }
 
-void stringSerialize(const byte_t *serializedData, void *inputString,
+void stringSerialize(const byte_t *serializedData, const void *inputString,
                      DecodMetadata metadata[STRING_FIELD_COUNT]) {
     String *string = ((String *) inputString);
     int offset = 0;
