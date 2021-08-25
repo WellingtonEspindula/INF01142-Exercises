@@ -43,8 +43,8 @@ pid_t recursive_fork(int procCount, int maxProcesses) {
 
         char message[messageSize];
         ssize_t bytes = read(pipeChannel[0], message, (messageSize * sizeof(char)));
-        printf("[Son; P%d; PID=%d] Read %zd bytes from pipe\n", procCount, getpid(), bytes);
-        printf("[Son; P%d; PID=%d] Message Read: %s\n", procCount, getpid(), message);
+        printf("[Child; P%d; PID=%d] Read %zd bytes from pipe\n", procCount, getpid(), bytes);
+        printf("[Child; P%d; PID=%d] Message Read: %s\n", procCount, getpid(), message);
 
         close(pipeChannel[0]);
 
